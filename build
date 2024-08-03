@@ -1,0 +1,10 @@
+#!/bin/bash
+
+g++ -oout/main main.cpp -nostdlib -static
+if [ $? -eq 0 ]; then
+	echo "Compilation successful. Running the program...
+	"
+	./out/main
+else
+	echo "Compilation failed."
+fi
